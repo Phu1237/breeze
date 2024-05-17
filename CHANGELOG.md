@@ -1,6 +1,255 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/breeze/compare/v1.14.3...1.x)
+## [Unreleased](https://github.com/laravel/breeze/compare/v1.29.1...1.x)
+
+## [v1.29.1](https://github.com/laravel/breeze/compare/v1.29.0...v1.29.1) - 2024-03-04
+
+* Updated throttleKey method to meet Str::lower excepted value in LoginRequest stub by [@rileyshannon](https://github.com/rileyshannon) in https://github.com/laravel/breeze/pull/365
+* Fix Livewire form validation by [@PerryvanderMeer](https://github.com/PerryvanderMeer) in https://github.com/laravel/breeze/pull/364
+
+## [v1.29.0](https://github.com/laravel/breeze/compare/v1.28.3...v1.29.0) - 2024-02-21
+
+* Update to Ziggy v2 by [@bakerkretzmar](https://github.com/bakerkretzmar) in https://github.com/laravel/breeze/pull/359
+
+## [v1.28.3](https://github.com/laravel/breeze/compare/v1.28.2...v1.28.3) - 2024-02-19
+
+* Improve default auth tests inside the stubs by [@Pilskalns](https://github.com/Pilskalns) in https://github.com/laravel/breeze/pull/358
+
+## [v1.28.2](https://github.com/laravel/breeze/compare/v1.28.1...v1.28.2) - 2024-02-13
+
+* [1.x] Use Livewire's `redirectIntended` function by [@PerryvanderMeer](https://github.com/PerryvanderMeer) in https://github.com/laravel/breeze/pull/352
+
+## [v1.28.1](https://github.com/laravel/breeze/compare/v1.28.0...v1.28.1) - 2024-01-15
+
+* Add default value for useRef calls in .tsx files by [@matthiasweiss](https://github.com/matthiasweiss) in https://github.com/laravel/breeze/pull/348
+
+## [v1.28.0](https://github.com/laravel/breeze/compare/v1.27.0...v1.28.0) - 2024-01-06
+
+* [1.x] Switch to `defineModel` in Vue stubs by [@osbre](https://github.com/osbre) in https://github.com/laravel/breeze/pull/285
+
+## [v1.27.0](https://github.com/laravel/breeze/compare/v1.26.3...v1.27.0) - 2023-12-19
+
+* Update PostCSS version by [@TENIOS](https://github.com/TENIOS) in https://github.com/laravel/breeze/pull/339
+* Added a x-on:close-modal.window directive so we can close modal from a livewire function by [@lucidpolygon](https://github.com/lucidpolygon) in https://github.com/laravel/breeze/pull/341
+* Improve Ziggy setup in Inertia stacks by [@bakerkretzmar](https://github.com/bakerkretzmar) in https://github.com/laravel/breeze/pull/340
+* [1.x] Vite 5 by [@timacdonald](https://github.com/timacdonald) in https://github.com/laravel/breeze/pull/342
+
+## [v1.26.3](https://github.com/laravel/breeze/compare/v1.26.2...v1.26.3) - 2023-12-06
+
+* asserting responses are ok before asserting presence of components by [@da-mask](https://github.com/da-mask) in https://github.com/laravel/breeze/pull/337
+* Fix handling of names with single quotes in Livewire navigation by [@dragi-ns](https://github.com/dragi-ns) in https://github.com/laravel/breeze/pull/336
+* Change Livewire Rule Attribute to Validate Attribute by [@achmedislamic](https://github.com/achmedislamic) in https://github.com/laravel/breeze/pull/334
+* [1.x] Uses `json_encode` like Jetstream by [@nunomaduro](https://github.com/nunomaduro) in https://github.com/laravel/breeze/pull/338
+
+## [v1.26.2](https://github.com/laravel/breeze/compare/v1.26.1...v1.26.2) - 2023-11-24
+
+* refactor: remove unused import by [@hsndmr](https://github.com/hsndmr) in https://github.com/laravel/breeze/pull/328
+* Remove unused import statement by [@arifhp86](https://github.com/arifhp86) in https://github.com/laravel/breeze/pull/329
+* [1.x] Fix duplicate password fields by [@tonysm](https://github.com/tonysm) in https://github.com/laravel/breeze/pull/332
+
+## [v1.26.1](https://github.com/laravel/breeze/compare/v1.26.0...v1.26.1) - 2023-11-01
+
+- Better Support for RTL by [@joelbutcher](https://github.com/joelbutcher) in https://github.com/laravel/breeze/pull/327
+
+## [v1.26.0](https://github.com/laravel/breeze/compare/v1.25.1...v1.26.0) - 2023-10-29
+
+- Fix Livewire 'remember me' flow for login doesn't remember by [@ebosveld](https://github.com/ebosveld) in https://github.com/laravel/breeze/pull/325
+- Beautify Livewire Stack by [@taylorotwell](https://github.com/taylorotwell) in https://github.com/laravel/breeze/pull/326
+
+## [v1.25.1](https://github.com/laravel/breeze/compare/v1.25.0...v1.25.1) - 2023-10-20
+
+- [1.x] Adds `lowercase` validation rule to user's `email` field by [@nunomaduro](https://github.com/nunomaduro) in https://github.com/laravel/breeze/pull/321
+- [1.x] Fix React type issue for SSR route by [@parth391](https://github.com/parth391) in https://github.com/laravel/breeze/pull/320
+- [1.x] Don't hide options by [@timacdonald](https://github.com/timacdonald) in https://github.com/laravel/breeze/pull/322
+
+## [v1.25.0](https://github.com/laravel/breeze/compare/v1.24.1...v1.25.0) - 2023-10-06
+
+- Adds Livewire Volt Functional API by [@nunomaduro](https://github.com/nunomaduro) in https://github.com/laravel/breeze/pull/318
+
+## [v1.24.1](https://github.com/laravel/breeze/compare/v1.24.0...v1.24.1) - 2023-10-04
+
+- Fix missing class import by [@qwert1x](https://github.com/qwert1x) in https://github.com/laravel/breeze/pull/317
+
+## [v1.24.0](https://github.com/laravel/breeze/compare/v1.23.3...v1.24.0) - 2023-09-20
+
+- Adds Livewire stack 🐙 by [@nunomaduro](https://github.com/nunomaduro) in https://github.com/laravel/breeze/pull/314
+
+## [v1.23.3](https://github.com/laravel/breeze/compare/v1.23.2...v1.23.3) - 2023-09-06
+
+- Add logout tests by [@xiCO2k](https://github.com/xiCO2k) in https://github.com/laravel/breeze/pull/311
+
+## [v1.23.2](https://github.com/laravel/breeze/compare/v1.23.1...v1.23.2) - 2023-09-01
+
+- Highlight Alpine by [@timacdonald](https://github.com/timacdonald) in https://github.com/laravel/breeze/pull/307
+
+## [v1.23.1](https://github.com/laravel/breeze/compare/v1.23.0...v1.23.1) - 2023-08-27
+
+- Replace `array_merge` with spread operator in `HandleInertiaRequests` by [@osbre](https://github.com/osbre) in https://github.com/laravel/breeze/pull/302
+
+## [v1.23.0](https://github.com/laravel/breeze/compare/v1.22.0...v1.23.0) - 2023-08-08
+
+- [1.x] Pest detection by [@jessarcher](https://github.com/jessarcher) in https://github.com/laravel/breeze/pull/300
+
+## [v1.22.0](https://github.com/laravel/breeze/compare/v1.21.2...v1.22.0) - 2023-08-02
+
+- [1.x] Update `[@vitejs](https://github.com/vitejs)/plugin-react` to v4 by [@parth391](https://github.com/parth391) in https://github.com/laravel/breeze/pull/298
+- [1.x] Prompts by [@jessarcher](https://github.com/jessarcher) in https://github.com/laravel/breeze/pull/295
+
+## [v1.21.2](https://github.com/laravel/breeze/compare/v1.21.1...v1.21.2) - 2023-06-21
+
+- Fix and standardise transitions by [@timacdonald](https://github.com/timacdonald) in https://github.com/laravel/breeze/pull/293
+- Use appName directly from .env in <title> by [@domnantas](https://github.com/domnantas) in https://github.com/laravel/breeze/pull/292
+
+## [v1.21.1](https://github.com/laravel/breeze/compare/v1.21.0...v1.21.1) - 2023-06-16
+
+- Remove implicit form method calls by @Jacobtims in https://github.com/laravel/breeze/pull/290
+
+## [v1.21.0](https://github.com/laravel/breeze/compare/v1.20.2...v1.21.0) - 2023-05-04
+
+- Migrate to modules by @timacdonald in https://github.com/laravel/breeze/pull/246
+
+## [v1.20.2](https://github.com/laravel/breeze/compare/v1.20.1...v1.20.2) - 2023-04-16
+
+- Remove redundant form data in vue stub by @datlechin in https://github.com/laravel/breeze/pull/280
+- Add Sanctum Guard by @taylorotwell in https://github.com/laravel/breeze/commit/b010ff3f8cd8e9ae2a2023ca323fba9987157f60
+
+## [v1.20.1](https://github.com/laravel/breeze/compare/v1.20.0...v1.20.1) - 2023-03-28
+
+- Fix ref in react TextInput by @denis-n-ko in https://github.com/laravel/breeze/pull/277
+- Update `current_password` rule in ProfileController by @saade in https://github.com/laravel/breeze/pull/278
+- Fix Pest test installation for Inertia stack by @jessarcher in https://github.com/laravel/breeze/pull/279
+
+## [v1.20.0](https://github.com/laravel/breeze/compare/v1.19.2...v1.20.0) - 2023-03-20
+
+- Add opt-in TypeScript support by @jessarcher in https://github.com/laravel/breeze/pull/267
+- Uses Pest 2 by @nunomaduro in https://github.com/laravel/breeze/pull/274
+- API Stub EnsureEmailIsVerified Middleware: Remove unused function arguments in params by @raksbisht in https://github.com/laravel/breeze/pull/264
+- Prop consistency by @jessarcher in https://github.com/laravel/breeze/pull/272
+- React - Fix potential "undefined" class by @jessarcher in https://github.com/laravel/breeze/pull/271
+- React - Remove unnecessary text input wrapper by @jessarcher in https://github.com/laravel/breeze/pull/270
+- React - Fix input focusing when password update fails by @jessarcher in https://github.com/laravel/breeze/pull/269
+- React - Simplify Form Handler by @jessarcher in https://github.com/laravel/breeze/pull/268
+- Fix password-update pest tests by @mtvbrianking in https://github.com/laravel/breeze/pull/273
+
+## [v1.19.2](https://github.com/laravel/breeze/compare/v1.19.1...v1.19.2) - 2023-02-18
+
+- Improve React components by @jessarcher in https://github.com/laravel/breeze/pull/257
+- Fix input field Id in ForgotPassword.jsx by @tomdupont in https://github.com/laravel/breeze/pull/262
+
+## [v1.19.1](https://github.com/laravel/breeze/compare/v1.19.0...v1.19.1) - 2023-02-14
+
+### Changed
+
+- Remove link
+
+## [v1.19.0](https://github.com/laravel/breeze/compare/v1.18.2...v1.19.0) - 2023-02-14
+
+### Changed
+
+- Clean up route definition for Single Action Controllers by @istiak-tridip in https://github.com/laravel/breeze/pull/249
+- Add translation to placeholder in delete-user-form.blade.php by @castrohenworx in https://github.com/laravel/breeze/pull/250
+- Allowed a hardcoded string to be localized by @Wendelstein7 in https://github.com/laravel/breeze/pull/254
+- Update font and welcome page by @jessarcher in https://github.com/laravel/breeze/pull/253
+
+### Fixed
+
+- Allows to install `--pest` in Laravel 10 by @driesvints in https://github.com/laravel/breeze/pull/251
+
+### Removed
+
+- Remove unused files from stubs by @emargareten in https://github.com/laravel/breeze/pull/255
+
+## [v1.18.2](https://github.com/laravel/breeze/compare/v1.18.1...v1.18.2) - 2023-02-02
+
+### Changed
+
+- Use autocomplete for all fields for password manager compatibility by @lukearmstrong in https://github.com/laravel/breeze/pull/245
+
+## [v1.18.1](https://github.com/laravel/breeze/compare/v1.18.0...v1.18.1) - 2023-01-31
+
+### Changed
+
+- Inform user of dependency install process by @itxshakil in https://github.com/laravel/breeze/pull/241
+
+### Fixed
+
+- Update nav menu dark text to be consistent with nav link by @RhysLees in https://github.com/laravel/breeze/pull/239
+
+## [v1.18.0](https://github.com/laravel/breeze/compare/v1.17.0...v1.18.0) - 2023-01-18
+
+### Added
+
+- Laravel v10 Support by @driesvints in https://github.com/laravel/breeze/pull/235
+- Inertia v1 Support by @jessarcher in https://github.com/laravel/breeze/pull/238
+
+### Changed
+
+- Prompt when the stack argument is not provided by @jessarcher in https://github.com/laravel/breeze/pull/236
+- Use Illuminate console components for prompting by @jessarcher in https://github.com/laravel/breeze/pull/237
+
+## [v1.17.0](https://github.com/laravel/breeze/compare/v1.16.1...v1.17.0) - 2023-01-03
+
+### Changed
+
+- Uses PHP Native Type Declarations 🐘  by @nunomaduro in https://github.com/laravel/breeze/pull/201
+
+## [v1.16.1](https://github.com/laravel/breeze/compare/v1.16.0...v1.16.1) - 2022-12-19
+
+### Fixed
+
+- Remove unused vue imports by @dillingham in https://github.com/laravel/breeze/pull/231
+- Renamed isFocused prop on TextInput component by @drewmw5 in https://github.com/laravel/breeze/pull/232
+
+## [v1.16.0](https://github.com/laravel/breeze/compare/v1.15.4...v1.16.0) - 2022-12-16
+
+### Added
+
+- [1.x] Vite 4 support by @timacdonald in https://github.com/laravel/breeze/pull/226
+
+### Changed
+
+- Blade stack - Moved duplicated logo component to guest layout by @magdicom in https://github.com/laravel/breeze/pull/228
+
+### Fixed
+
+- Fix typo in delete user forms by @alexcanana in https://github.com/laravel/breeze/pull/225
+- Fixed capitalization of autoComplete prop by @drewmw5 in https://github.com/laravel/breeze/pull/230
+
+## [v1.15.4](https://github.com/laravel/breeze/compare/v1.15.3...v1.15.4) - 2022-12-05
+
+### Changed
+
+- Use Default NPM Package Manager of User if Lock File Exists In Base Path by @andrewdwallo in https://github.com/laravel/breeze/pull/224
+
+## [v1.15.3](https://github.com/laravel/breeze/compare/v1.15.2...v1.15.3) - 2022-11-28
+
+### Fixed
+
+- Fix-psr-4-warning by @Kamona-WD in https://github.com/laravel/breeze/pull/221
+- Status must be String by @marsuboss in https://github.com/laravel/breeze/pull/219
+- Fix close modal with escape keydown and cleanup import react by @fouteox in https://github.com/laravel/breeze/pull/218
+
+## [v1.15.2](https://github.com/laravel/breeze/compare/v1.15.1...v1.15.2) - 2022-11-21
+
+### Fixed
+
+- Fix closing tag by @kaozaza2 in https://github.com/laravel/breeze/pull/213
+- Vue code formatting by @jessarcher in https://github.com/laravel/breeze/pull/212
+- React formatting by @fouteox in https://github.com/laravel/breeze/pull/214
+- Add missing translation methods to Blade stack by @jessarcher in https://github.com/laravel/breeze/pull/215
+
+## [v1.15.1](https://github.com/laravel/breeze/compare/v1.15.0...v1.15.1) - 2022-11-15
+
+### Fixed
+
+- Fix namespace in PasswordUpdateTest.php by @irsyadadl in https://github.com/laravel/breeze/pull/211
+
+## [v1.15.0](https://github.com/laravel/breeze/compare/v1.14.3...v1.15.0) - 2022-11-15
+
+### Added
+
+- Add "Profile" page by @jessarcher in https://github.com/laravel/breeze/pull/205
+- Opt-in dark mode support :crescent_moon:  by @jessarcher in https://github.com/laravel/breeze/pull/209
 
 ## [v1.14.3](https://github.com/laravel/breeze/compare/v1.14.2...v1.14.3) - 2022-11-06
 

@@ -11,20 +11,23 @@ on:
 
 jobs:
   stub-tests:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     strategy:
       fail-fast: true
       matrix:
-        stack: [blade, react, vue, api]
-        args: [null, --pest]
+        stack: [blade, livewire, livewire-functional, react, vue, api]
+        laravel: [10]
+        args: ["", --pest]
         include:
           - stack: vue
-            args: --ssr
+            args: --ssr --typescript
+            laravel: 10
           - stack: react
-            args: --ssr
+            args: --ssr --typescript
+            laravel: 10
 
-    name: Test Stubs - ${{ matrix.stack }} ${{ matrix.args }}
+    name: Test Stubs - Laravel ${{ matrix.laravel }} - ${{ matrix.stack }} ${{ matrix.args }}
 
     steps:
       - name: Setup PHP
@@ -38,12 +41,12 @@ jobs:
 
       - name: Setup Laravel
         run: |
-          composer create-project laravel/laravel:^9 .
-          composer require laravel/breeze:* --no-interaction --no-update
+          composer create-project laravel/laravel:^${{ matrix.laravel }} .
+          composer require laravel/breeze:@dev --no-interaction --no-update
           composer config repositories.breeze '{"type": "path", "url": "breeze"}' --file composer.json
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: 'breeze'
 
@@ -61,7 +64,7 @@ jobs:
         run: npm run build
 
       - name: Execute tests
-        run: ${{ matrix.args == '--pest' && 'vendor/bin/pest' || 'vendor/bin/phpunit' }} --verbose
+        run: ${{ matrix.args == '--pest' && 'vendor/bin/pest' || 'vendor/bin/phpunit' }}
         env:
           DB_CONNECTION: sqlite
           DB_DATABASE: ":memory:"
